@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.SubsysAccessDoorMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.SubsysAccessDoor">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table subsys_access_door-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+    <result column="name" jdbcType="CHAR" property="name" />
+    <result column="sensortype" jdbcType="INTEGER" property="sensortype" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, pid, `name`, sensortype
+  </sql>
+</mapper>

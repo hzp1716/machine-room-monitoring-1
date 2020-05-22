@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.LinkageMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.Linkage">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table linkage-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+    <result column="name" jdbcType="CHAR" property="name" />
+    <result column="conditionscript" jdbcType="BLOB" property="conditionscript" />
+    <result column="actvalue" jdbcType="VARCHAR" property="actvalue" />
+    <result column="actvaluetype" jdbcType="SMALLINT" property="actvaluetype" />
+    <result column="operatetype" jdbcType="SMALLINT" property="operatetype" />
+    <result column="periodsid" jdbcType="CHAR" property="periodsid" />
+    <result column="dst" jdbcType="CHAR" property="dst" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, pid, `name`, conditionscript, actvalue, actvaluetype, operatetype, periodsid, 
+    dst
+  </sql>
+</mapper>

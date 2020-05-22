@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.UsrMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.Usr">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table usr-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="name" jdbcType="CHAR" property="name" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="position" jdbcType="CHAR" property="position" />
+    <result column="telephone" jdbcType="CHAR" property="telephone" />
+    <result column="mobilephone" jdbcType="CHAR" property="mobilephone" />
+    <result column="email" jdbcType="CHAR" property="email" />
+    <result column="address" jdbcType="CHAR" property="address" />
+    <result column="company" jdbcType="CHAR" property="company" />
+    <result column="cardno" jdbcType="CHAR" property="cardno" />
+    <result column="empno" jdbcType="CHAR" property="empno" />
+    <result column="addition1" jdbcType="CHAR" property="addition1" />
+    <result column="addition2" jdbcType="CHAR" property="addition2" />
+    <result column="addition3" jdbcType="CHAR" property="addition3" />
+    <result column="addition4" jdbcType="CHAR" property="addition4" />
+    <result column="addition5" jdbcType="CHAR" property="addition5" />
+    <result column="periodsid" jdbcType="CHAR" property="periodsid" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+    <result column="accountid" jdbcType="CHAR" property="accountid" />
+    <result column="depart_id" jdbcType="CHAR" property="departId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, `name`, sex, `position`, telephone, mobilephone, email, address, company, cardno, 
+    empno, addition1, addition2, addition3, addition4, addition5, periodsid, pid, accountid, 
+    depart_id
+  </sql>
+    <select id="getByUsername" resultMap="BaseResultMap">
+      select * from usr where name=#{name}
+    </select>
+</mapper>

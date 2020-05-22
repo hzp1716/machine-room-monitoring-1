@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.LinkagesrcMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.Linkagesrc">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table linkagesrc-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="mpid" jdbcType="CHAR" property="mpid" />
+    <result column="mpname" jdbcType="VARCHAR" property="mpname" />
+    <result column="seqnum" jdbcType="INTEGER" property="seqnum" />
+    <result column="linkageid" jdbcType="CHAR" property="linkageid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, mpid, mpname, seqnum, linkageid
+  </sql>
+</mapper>

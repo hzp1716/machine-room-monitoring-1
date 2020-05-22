@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.Rtdatato3dMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.Rtdatato3d">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table rtdatato3d-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="rtdsrc" jdbcType="BLOB" property="rtdsrc" />
+    <result column="rtddst" jdbcType="BLOB" property="rtddst" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, rtdsrc, rtddst, pid
+  </sql>
+</mapper>

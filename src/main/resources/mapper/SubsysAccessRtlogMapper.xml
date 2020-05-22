@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.SubsysAccessRtlogMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.SubsysAccessRtlog">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table subsys_access_rtlog-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="diviceid" jdbcType="CHAR" property="diviceid" />
+    <result column="prjid" jdbcType="CHAR" property="prjid" />
+    <result column="cardno" jdbcType="CHAR" property="cardno" />
+    <result column="model" jdbcType="BLOB" property="model" />
+    <result column="eventtype" jdbcType="INTEGER" property="eventtype" />
+    <result column="alarmconfirm" jdbcType="VARCHAR" property="alarmconfirm" />
+    <result column="Occurtime" jdbcType="TIMESTAMP" property="occurtime" />
+    <result column="doorid" jdbcType="INTEGER" property="doorid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, diviceid, prjid, cardno, model, eventtype, alarmconfirm, Occurtime, doorid
+  </sql>
+</mapper>

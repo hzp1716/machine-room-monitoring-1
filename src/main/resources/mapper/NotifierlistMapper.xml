@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.NotifierlistMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.Notifierlist">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table notifierlist-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="sname" jdbcType="CHAR" property="sname" />
+    <result column="type" jdbcType="SMALLINT" property="type" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+    <result column="isenable" jdbcType="BOOLEAN" property="isenable" />
+    <result column="configInfo" jdbcType="VARCHAR" property="configinfo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, sname, `type`, pid, isenable, configInfo
+  </sql>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.windthunder.machineroom.monitoring.mapper.DefaultPageMapper">
+  <resultMap id="BaseResultMap" type="com.windthunder.machineroom.monitoring.domain.DefaultPage">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    <!--@Table default_page-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="NAME" jdbcType="CHAR" property="name" />
+    <result column="no" jdbcType="INTEGER" property="no" />
+    <result column="description" jdbcType="CHAR" property="description" />
+    <result column="pid" jdbcType="CHAR" property="pid" />
+    <result column="background" jdbcType="BLOB" property="background" />
+    <result column="backgrdtype" jdbcType="INTEGER" property="backgrdtype" />
+    <result column="devtype" jdbcType="INTEGER" property="devtype" />
+    <result column="width" jdbcType="INTEGER" property="width" />
+    <result column="height" jdbcType="INTEGER" property="height" />
+    <result column="uies" jdbcType="BLOB" property="uies" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed May 20 17:32:13 CST 2020.-->
+    id, `NAME`, `no`, description, pid, background, backgrdtype, devtype, width, height, 
+    uies
+  </sql>
+</mapper>
